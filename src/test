@@ -4,7 +4,7 @@ sudo rm -rf /usr/bin/bbqlinux-greeter
 sudo rm -rf /usr/lib/bbqlinux-greeter
 sudo rm -rf /usr/share/bbqlinux-greeter
 
-pyrcc4 -o usr/share/bbqlinux-greeter/ressources_rc.py usr/share/bbqlinux-greeter/ressources.qrc
+pyrcc4 -o usr/share/bbqlinux-greeter/resources_rc.py usr/share/bbqlinux-greeter/resources.qrc
 
 sudo cp -R usr /
 

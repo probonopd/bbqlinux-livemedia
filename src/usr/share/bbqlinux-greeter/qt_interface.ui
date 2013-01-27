@@ -68,7 +68,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>20</y>
+      <y>10</y>
       <width>741</width>
       <height>71</height>
      </rect>
@@ -82,7 +82,10 @@ p, li { white-space: pre-wrap; }
      </font>
     </property>
     <property name="text">
-     <string>Welcome to BBQLinux</string>
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="ressources.qrc">:/images/images/welcome_head.png</pixmap>
     </property>
    </widget>
   </widget>

@@ -16,12 +16,14 @@
 
 import sys
 sys.path.append('/usr/lib/bbqlinux-greeter')
+sys.path.append('/usr/share/bbqlinux-greeter')
 import os
 import string
 
 from greeter import GreeterEngine
 
 from PyQt4 import QtGui, QtCore, uic
+import qt_ressources_rc
 
 class GreeterWindow(QtGui.QMainWindow):
 

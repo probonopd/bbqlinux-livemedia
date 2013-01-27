@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="images">
+    <file>images/welcome_head.png</file>
+  </qresource>
+</RCC>

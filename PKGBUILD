@@ -2,12 +2,12 @@
 
 pkgname=bbqlinux-livemedia
 pkgver=0.0.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Tools for the BBQLinux live media"
 arch=('any')
 url="https://github.com/bbqlinux/bbqlinux-livemedia"
 license=('GPL')
-depends=('python2' 'qt' 'python2-pyqt')
+depends=('python2' 'qt4' 'python2-pyqt')
 
 package() {
   cd "$pkgdir"

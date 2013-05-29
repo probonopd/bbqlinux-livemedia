@@ -4,10 +4,10 @@ LIVEUSER=bbqlinux
 PASSWORD=$(perl -e 'print crypt($ARGV[0], "password")' $LIVEUSER)
 
 # Create group for automatic login
-groupadd -f nopasswdlogin
+groupadd -f autologin
 
 # Create the live user
-useradd -m -k /etc/skel -g users -G audio,games,installer,lp,nopasswdlogin,optical,power,scanner,shutdown,storage,sudo,video -s /bin/bash -p $PASSWORD $LIVEUSER
+useradd -m -k /etc/skel -g users -G audio,games,installer,lp,autologin,optical,power,scanner,shutdown,storage,sudo,video -s /bin/bash -p $PASSWORD $LIVEUSER
 
 # Change finger information for the live user
 chfn -f "BBQLinux Live User" $LIVEUSER

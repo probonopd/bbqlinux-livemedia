@@ -1,7 +1,7 @@
-# Maintainer: Daniel Hillenbrand <codeworkx@bbqlinux.org>
+# Maintainer: Daniel Hillenbrand <codeworkx [at] bbqlinux [dot] org>
 
 pkgname=bbqlinux-livemedia
-pkgver=0.0.4
+pkgver=1.0.0
 pkgrel=1
 pkgdesc="Tools for the BBQLinux live media"
 arch=('any')

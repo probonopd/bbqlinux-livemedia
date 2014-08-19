@@ -1,0 +1,8 @@
+[Unit]
+Description=Prepare the BBQLinux livesystem
+
+[Service]
+ExecStart=/usr/bin/prepare_livesystem
+
+[Install]
+WantedBy=multi-user.target 

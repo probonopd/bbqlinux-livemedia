@@ -1,7 +1,7 @@
 # Maintainer: Daniel Hillenbrand <codeworkx [at] bbqlinux [dot] org>
 
 pkgname=bbqlinux-livemedia
-pkgver=1.0.0
+pkgver=1.0.2
 pkgrel=1
 pkgdesc="Tools for the BBQLinux live media"
 arch=('any')
@@ -13,6 +13,7 @@ package() {
   cd "$pkgdir"
 
   install -Dm755 "$srcdir/usr/bin/bbqlinux-greeter" usr/bin/bbqlinux-greeter
+  install -Dm755 "$srcdir/usr/bin/prepare_livesystem" usr/bin/prepare_livesystem
   
   cp -R "$srcdir/etc" etc
   cp -R "$srcdir/usr/lib" usr/lib

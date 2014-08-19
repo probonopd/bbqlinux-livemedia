@@ -15,4 +15,8 @@ chfn -f "BBQLinux Live User" $LIVEUSER
 # Copy skel folder to users home
 su -c "cp -r /etc/skel/.[a-zA-Z0-9]* /home/$LIVEUSER/" $LIVEUSER
 
+# Set default timezone
+ln -sf /usr/share/zoneinfo/UTC /etc/localtime
+
 exit 0
+

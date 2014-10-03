@@ -50,5 +50,5 @@ class GreeterWindow(QtGui.QMainWindow):
         self.connect(self.ui.button_install, QtCore.SIGNAL("clicked()"), self.button_install_clicked)
 
     def button_install_clicked(self):
-        subprocess.call(["gksu", "/usr/bin/bbqlinux-installer"])
+        subprocess.call(["gksudo", "/usr/bin/bbqlinux-installer"])
         quit()

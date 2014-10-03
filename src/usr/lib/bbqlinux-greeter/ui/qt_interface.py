@@ -19,8 +19,8 @@ sys.path.append('/usr/lib/bbqlinux-greeter')
 sys.path.append('/usr/share/bbqlinux-greeter')
 import os
 import string
-
-from greeter import GreeterEngine
+import subprocess
+from subprocess import call
 
 from PyQt4 import QtGui, QtCore, uic
 import qt_resources_rc
@@ -47,3 +47,8 @@ class GreeterWindow(QtGui.QMainWindow):
         
         # Connect the buttons
         self.connect(self.ui.button_exit, QtCore.SIGNAL("clicked()"), QtGui.qApp, QtCore.SLOT("quit()"))
+        self.connect(self.ui.button_install, QtCore.SIGNAL("clicked()"), self.button_install_clicked)
+
+    def button_install_clicked(self):
+        subprocess.call(["gksu", "/usr/bin/bbqlinux-installer"])
+        quit()

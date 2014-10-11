@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Disable lock screen
+gsettings set org.mate.screensaver lock-enabled false
+gsettings set org.mate.screensaver idle-activation-enabled false
+
+exit 0

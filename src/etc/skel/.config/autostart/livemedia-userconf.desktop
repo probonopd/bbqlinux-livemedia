@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=BBQLinux livemedia user config
+Comment=BBQLinux livemedia user config
+Exec=/usr/bin/bbqlinux-livemedia-userconf
+Icon=bbqlinux_icon_blue_32x32
+Terminal=false
+Categories=System;

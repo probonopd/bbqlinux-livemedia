@@ -16,7 +16,7 @@ chfn -f "BBQLinux Live User" $LIVEUSER
 su -c "cp -r /etc/skel/.[a-zA-Z0-9]* /home/$LIVEUSER/" $LIVEUSER
 
 # Set default timezone
-ln -sf /usr/share/zoneinfo/UTC /etc/localtime
+timedatectl set-timezone Europe/London
 
 exit 0
 

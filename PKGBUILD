@@ -1,7 +1,7 @@
 # Maintainer: Daniel Hillenbrand <codeworkx [at] bbqlinux [dot] org>
 
 pkgname=bbqlinux-livemedia
-pkgver=1.3.2
+pkgver=1.3.4
 pkgrel=1
 pkgdesc="Configuration of the BBQLinux live media"
 arch=('any')

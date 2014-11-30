@@ -2,8 +2,9 @@
 
 LIVEUSER=bbqlinux
 PASSWORD=$(perl -e 'print crypt($ARGV[0], "password")' $LIVEUSER)
+INSTALLER_ICON=/usr/share/applications/calamares-bbqlinux.desktop
 
-# Create group for automatic login
+# Create group for autologin
 groupadd -f autologin
 
 # Create the live user
@@ -14,6 +15,14 @@ chfn -f "BBQLinux Live User" $LIVEUSER
 
 # Copy skel folder to users home
 su -c "cp -r /etc/skel/.[a-zA-Z0-9]* /home/$LIVEUSER/" $LIVEUSER
+
+# Copy installer-icon to desktop
+if [ -f $INSTALLER_ICON ]; then
+    mkdir -p /home/$LIVEUSER/.local/share/applications/
+    cp $INSTALLER_ICON /home/$LIVEUSER/.local/share/applications/
+    mkdir -p /home/$LIVEUSER/Desktop/
+    cp $INSTALLER_ICON /home/$LIVEUSER/Desktop/
+fi
 
 # Set default timezone
 timedatectl set-timezone Europe/London

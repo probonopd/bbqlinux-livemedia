@@ -4,4 +4,7 @@
 gsettings set org.mate.screensaver lock-enabled false
 gsettings set org.mate.screensaver idle-activation-enabled false
 
+# Disable Android Studio first run assistant
+echo disable.android.first.run=true >> /opt/android-studio/bin/idea.properties
+
 exit 0
